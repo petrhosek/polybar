@@ -1,0 +1,31 @@
+Source: polybar
+Section: x11
+Priority: extra
+Maintainer: Petr Hosek <phosek@google.com>
+Build-Depends: debhelper (>= 9),
+	cmake,
+	pkg-config,
+	xcb-proto,
+	fontconfig,
+	python-xcbgen,
+	libcairo2-dev,
+	libxcb-ewmh-dev,
+	libxcb-icccm4-dev,
+	libxcb-image0-dev,
+	libxcb-randr0-dev,
+	libxcb-util0-dev,
+	libxcb-xkb-dev,
+	libxcb-xrm-dev,
+	libasound2-dev,
+	libmpdclient-dev,
+	libiw-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/jaagr/polybar
+
+Package: polybar
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Fast and easy-to-use status bar
+ Polybar aims to help users build beautiful and highly customizable
+ status bars for their desktop environment, without the need of having
+ a black belt in shell scripting.
